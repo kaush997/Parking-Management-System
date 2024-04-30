@@ -9,5 +9,13 @@
 04) installed laravel 10 breeze package
         php artisan breeze:install
         #blade, dark mode(yes), pest
+05) Created database on phpmyadmin
         php artisan migrate
+06) installed npm
         npm install
+07) run npm run build command and found error
+        added "type": "module" to package.json
+        then run,
+                npm run build
+        npm run dev
+        
