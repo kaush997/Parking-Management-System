@@ -17,7 +17,7 @@ class UsersTableSeeder extends Seeder
         DB::table('users')->insert([
            //sadmin
            [
-            'client'=> 'slt',
+            'name'=> 'slt',
             'username'=> 'sadmin',
             'email'=> 'sadmin.slt@gmail.com',
             'role'=> 'sadmin',
@@ -25,7 +25,7 @@ class UsersTableSeeder extends Seeder
            ],
            //ssadmin
            [
-            'client'=> 'slt',
+            'name'=> 'slt',
             'username'=> 'ssadmin',
             'email'=> 'ssadmin.slt@gmail.com',
             'role'=> 'ssadmin',
@@ -33,11 +33,19 @@ class UsersTableSeeder extends Seeder
            ],
            //security
            [
-            'client'=> 'slt',
+            'name'=> 'slt',
             'username'=> 'security',
             'email'=> 'security.slt@gmail.com',
             'role'=> 'security',
             'password'=> Hash::make('sec'),
+           ],   
+           //user
+           [
+            'name'=> 'slt',
+            'username'=> 'user',
+            'email'=> 'user.slt@gmail.com',
+            'role'=> 'user',
+            'password'=> Hash::make('user'),
            ],   
            ]);
     }
