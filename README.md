@@ -19,3 +19,5 @@
                 npm run build
         npm run dev
 08) create authorizations for different user accounts
+        php artisan make:seeder UsersTableSeeder
+         
