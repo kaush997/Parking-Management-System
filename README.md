@@ -23,5 +23,13 @@
         changed userFactory
         changed DatabaseSeeder
 09) Refresh database migrations
-        php artisan migrate:fresh --seed
-        
+        //php artisan migrate:fresh --seed
+10) Added routes to web.php to create different user dashboards
+11) created new controller using terminal
+        //php artisan make:controller SadminController
+12) Created folders inside the views for multiple roles
+        created sadmin_dashboard.blade.php file inside sadmin folder in views
+13) Generate simple html file by typing "!" and press enter key.
+14) watch route list
+        //php artisan r:l
+15) Updated AuthenticatedSessionController by adding if else function

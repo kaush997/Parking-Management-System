@@ -2,6 +2,9 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SadminController;
+use App\Http\Controllers\SsadminController;
+use App\Http\Controllers\SecurityController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,3 +32,7 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+Route::get('/ssadmin/dashboard', [SsadminController::class, 'SsadminDashboard'])->name('ssadmin.dashboard');
+Route::get('/sadmin/dashboard', [SadminController::class, 'SadminDashboard'])->name('sadmin.dashboard');
+Route::get('/security/dashboard', [SecurityController::class, 'SecurityDashboard'])->name('security.dashboard');
