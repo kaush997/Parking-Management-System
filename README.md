@@ -34,3 +34,7 @@
         //php artisan r:l
 15) Updated AuthenticatedSessionController by adding if else function
 16) Changed accessibiliry by restriceted access from user account to other all accounts.
+        created middleware by using,
+        //php artisan make:middleware Role
+        Updated Kernel.php
+        Updated web.php
