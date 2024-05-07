@@ -41,3 +41,8 @@
 17) Changed login with Email/Username,
         Edited login.blage.php
         Edited LoginRequest.php
+18) Created clients table with its Client model
+        php artisan make:migration create_clients_table
+        php artisan make:model Client
+        php artisan migrate
+        php artisan migrate:fresh --seed
