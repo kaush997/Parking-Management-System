@@ -38,3 +38,6 @@
         //php artisan make:middleware Role
         Updated Kernel.php
         Updated web.php
+17) Changed login with Email/Username,
+        Edited login.blage.php
+        Edited LoginRequest.php
