@@ -33,6 +33,14 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__.'/auth.php';
 
-Route::get('/ssadmin/dashboard', [SsadminController::class, 'SsadminDashboard'])->name('ssadmin.dashboard');
-Route::get('/sadmin/dashboard', [SadminController::class, 'SadminDashboard'])->name('sadmin.dashboard');
-Route::get('/security/dashboard', [SecurityController::class, 'SecurityDashboard'])->name('security.dashboard');
+Route::middleware(['auth','role:ssadmin'])->group(function(){
+    Route::get('/ssadmin/dashboard', [SsadminController::class, 'SsadminDashboard'])->name('ssadmin.dashboard');
+}); //end group ssadmin middleware
+
+Route::middleware(['auth','role:sadmin'])->group(function(){
+    Route::get('/sadmin/dashboard', [SadminController::class, 'SadminDashboard'])->name('sadmin.dashboard');
+}); //end group sadmin middleware
+
+Route::middleware(['auth','role:security'])->group(function(){
+    Route::get('/security/dashboard', [SecurityController::class, 'SecurityDashboard'])->name('security.dashboard');
+}); //end group security middleware
