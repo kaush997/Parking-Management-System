@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class SecurityController extends Controller
 {
     public function SecurityDashboard(){
-        return view("security.security_dashboard");
+        return view("security.index");
     } //end method
 }
