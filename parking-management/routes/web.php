@@ -17,9 +17,7 @@ use App\Http\Controllers\SecurityController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::redirect('/', destination:'login');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
